@@ -1,0 +1,58 @@
+.episode-scroll {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+        overflow-x: hidden; /* Hides horizontal scrollbar */
+      
+  }
+  
+  .scroll-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .episode-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .episode-info {
+    margin-top: 10px;
+  }
+  
+  .scroll-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

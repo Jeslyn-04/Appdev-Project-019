@@ -1,0 +1,40 @@
+.genre-grid {
+    display: flex;
+    flex-wrap:wrap;
+    margin-left: 80px;
+column-gap:20px;
+  }
+  .genre-card {
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    width: 300px; /* Specify the desired width of the container */
+    height: 200px; /* Specify the desired height of the container */
+    overflow: hidden; /* Hide any overflow content */
+  position: relative; /* Position relative for absolute positioning of the image */
+  border: 1px solid #ddd; /* Optional: border for visibility */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  .genre-card:hover {
+    transform: scale(1.08); /* Scale up the card slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+  }
+  
+  .genre-image {
+   
+  width: 100%; /* Ensure the image covers the container's width */
+  height: 100%; /* Ensure the image covers the container's height */
+  object-fit: cover; /* Cover the container without distorting the aspect ratio */
+  }
+  
+  .genre-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: -120px;
+  }
+  

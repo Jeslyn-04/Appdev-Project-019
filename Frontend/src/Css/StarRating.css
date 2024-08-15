@@ -1,0 +1,33 @@
+/* star-rating.css */
+
+/* Custom Colors */
+.text-custom-orange {
+    color: #ff9800; /* Orange color for filled stars */
+  }
+  
+  .text-gray-300 {
+    color: #d1d5db; /* Light gray for unfilled stars */
+  }
+  
+  /* Flexbox Container */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Cursor Pointer for Clickable Stars */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Spacing between Stars */
+  .cursor-pointer:not(:last-child) {
+    margin-right: 8px; /* 8px spacing between stars */
+  }
+  
+  /* Hover Effect for Stars */
+  .cursor-pointer:hover {
+    color: #ffc107; /* Slightly brighter yellow-orange on hover */
+  }
+  
+  

@@ -1,0 +1,18 @@
+#ad{
+    border-radius: 10px;
+    animation: move 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    position: relative;
+    font-family: cursive;
+    padding: 30px;
+    background:white;
+    border: 6px solid rgba(22, 21, 21, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    width: 25%;
+}
+@keyframes move {
+    from {left: 800px;opacity: 0;}
+    to {left: 600px;opacity: 1;}
+  }

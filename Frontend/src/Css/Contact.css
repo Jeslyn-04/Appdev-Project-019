@@ -1,0 +1,50 @@
+.contact-form {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  #cform {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+  }
+  
+  .cinput, .ctextarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  #cbtn{
+    padding: 10px;
+    border: none;
+    background-color: #5a4fcf;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    min-width: 200px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-left: 50px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #d9534f;
+  }
+  
+  .social-media a:hover {
+    color: #c9302c;
+  }
+  

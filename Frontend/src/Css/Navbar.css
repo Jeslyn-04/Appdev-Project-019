@@ -1,0 +1,91 @@
+/* src/Navbar.css */
+@font-face {
+  font-family: 'Coliseum Std Normal';
+  src: url('../../public/Coliseum\ Normal.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Coliseum Std Normal', sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /*box-shadow: 0 0 30px rgb(119, 243, 84);*/
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-item {
+  margin: 0px 20px;
+  font-size: 28px;
+}
+
+.nav-link {
+  position: relative; /* Required for positioning the ::before pseudo-element */
+  display: block;
+  font-family: 'Coliseum Std Normal';
+  color: aliceblue;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.nav-link:hover{
+  background-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* This makes the text transparent so the gradient shows through */
+}
+
+
+.nav-link::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #fbfadb;
+  position: absolute;
+  top: -20px;
+  width: 0%;
+  transition: width ease-in-out 250ms;
+  left:0;
+}
+
+.nav-link:target::before,
+.nav-link.active::before {
+  width: 100%;
+}
+
+.active {
+  color: aliceblue;
+}
+
+.profile-icon {
+  margin-left: auto;
+}
+
+.profile-icon .nav-link {
+  padding: 0;
+}
+
+.profile-icon .nav-link svg {
+  width: 40px;
+  height: 40px;
+}
